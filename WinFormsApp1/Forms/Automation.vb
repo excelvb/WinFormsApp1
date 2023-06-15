@@ -3,6 +3,7 @@ Imports Excel = Microsoft.Office.Interop.Excel
 Imports MySql.Data.MySqlClient
 Imports System.IO
 Imports System.Reflection
+Imports System.Security.Cryptography
 
 Public Class Automation
     'Variables
@@ -158,8 +159,12 @@ NextCode:
     'SQL Database connect
     'Add data
     Public Sub Sq_dbadd(rdate, rauto_p, ruser_n, rstart_t, rend_t, rdurat, rstatus, rerror_disc)
+        cn = New MySqlConnection
         Try
-            cn.Open()
+            With cn
+                .ConnectionString = "server=db4free.net;port=3306;user id=excelvb;password=01@Dec2019;database=excelvblog;Connect Timeout=10000000;pooling=true;old guids=true"
+                .Open()
+            End With
             cm = New MySqlCommand("INSERT INTO tblexcellog (date, automation_project, user_name, start_time, end_time, duration, status, error_description)values('" & rdate & "','" & rauto_p & "','" & ruser_n & "','" & rstart_t & "','" & rend_t & "','" & rdurat & "','" & rstatus & "','" & rerror_disc & "')", cn)
             cm.ExecuteNonQuery()
             cn.Close()
@@ -169,17 +174,17 @@ NextCode:
         End Try
     End Sub
 
-    Private Sub Automation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        cn = New MySqlConnection
-        Try
-            With cn
-                .ConnectionString = "server=db4free.net;port=3306;user id=excelvb;password=01@Dec2019;database=excelvblog;Connect Timeout=10000000;pooling=true;old guids=true"
-                .Open()
-                .Close()
-            End With
-        Catch ex As Exception
-            MsgBox(ex.Message & "Enable to connect to Database, Please contact Admin!")
-            cn.Close()
-        End Try
-    End Sub
+    'Private Sub Automation_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    '   cn = New MySqlConnection
+    'Try
+    'With cn
+    '.ConnectionString = "server=db4free.net;port=3306;user id=excelvb;password=01@Dec2019;database=excelvblog;Connect Timeout=10000000;pooling=true;old guids=true"
+    '.Open()
+    '.Close()
+    'End With
+    'Catch ex As Exception
+    '       MsgBox(ex.Message & "Enable to connect to Database, Please contact Admin!")
+    '      cn.Close()
+    'End Try
+    'End Sub
 End Class
