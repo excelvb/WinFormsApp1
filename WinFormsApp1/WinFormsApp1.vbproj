@@ -10,6 +10,8 @@
     <Company>Robo_V</Company>
     <Product>Robo_V</Product>
     <PackageIcon>pngtree-cute-robot-mascot-logo-png-image_8493119-removebg-preview.png</PackageIcon>
+    <AssemblyName>Robo_V</AssemblyName>
+    <RootNamespace>Robo_V</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

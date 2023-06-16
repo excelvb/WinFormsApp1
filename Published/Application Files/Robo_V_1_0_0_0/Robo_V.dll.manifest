@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="WinFormsApp1.exe" version="1.0.0.2" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Robo_V.exe" version="1.0.0.0" publicKeyToken="2f8bc51061705c87" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="roboIcon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -42,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="16384">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Launcher.exe" size="17408">
       <assemblyIdentity name="Launcher" version="8.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>co2gX+IH6CpH7AXebDHb+P2t2zbxo0OtvKdAkhEH5mI=</dsig:DigestValue>
+        <dsig:DigestValue>X3PbsmMq1G9a2bClS6oGeGa/Nq2NtxhVELVFoEhtsmE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -114,6 +115,51 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>n9WMmhxLrWNb9i0WBvIppTnYxciO92UB10qp8JN1fn8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Robo_V.deps.json" size="18507">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GrdhJFm7hDE1YG4ScJMaBoNyJxHnE7DUs+2odRY58Mw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Robo_V.dll" size="133632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1k6gTmwc5fY4Qu69O6vAyeD4wWIoEvqpYWG4h9q0WBM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Robo_V.exe" size="176128">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7T92H/7Uvmq/DYQgsqmWesmLtysPdwwiYLsQ9eFa1z0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Robo_V.runtimeconfig.json" size="372">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HsoPDHAHCqg7tgnkt0mybctECXhDJgMnJjlHIiJKCYo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="roboIcon.ico" size="27748">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>f6T+xvR1HjcS/xhVNfWkuzd15xylXVrtTTYO0oHjYXU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll" size="71312">
@@ -197,40 +243,4 @@
       <dsig:DigestValue>zN/DfVGqQ/hCQZebB+/QzwHRqLbr4EqoY6jvt3+6BqE=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="WinFormsApp1.deps.json" size="18525">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>XwWouI2LcU9EMCgPM+4Mn3YWEtFGyw2JUvvI8tOZW6g=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="WinFormsApp1.dll" size="104960">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>1ZKtzapDeNBaA/cggnT9GoLSt0UxuEbyes5sJxD3UaI=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="WinFormsApp1.exe" size="147456">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>GcX0gZxJ2fcVfmytQTCXRNTBJDnNq2qmvJwTmCKJ0WA=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="WinFormsApp1.runtimeconfig.json" size="372">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>HsoPDHAHCqg7tgnkt0mybctECXhDJgMnJjlHIiJKCYo=</dsig:DigestValue>
-    </hash>
-  </file>
-</asmv1:assembly>
+<publisherIdentity name="CN=ADMINRG-1DN5UFO\DheerPinky" issuerKeyHash="961b891c9751f1f09469c55b60e9bedbe9c8b542" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>iw9909Lrcfs5BbMN7MEmH6XTTROCInbWFGvNDpaQzGw=</DigestValue></Reference></SignedInfo><SignatureValue>ZyI26f5f6/tDAhBBt/0gaER5EfZmfpyLYjuT02HXVX/YtTz5NdHNWKq2u0onNnypK5bnEn+ow1seFgH7nWmblcHoHBXBrV62IYJxZpjvcY069yiMjG2UYnzYV+j/nEITlGOqeheyfZ6DyJbTqOHKg7oDK6XagdgdjucYz/wMf+I=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>tw1DPgrjGwiLJ6V4yEF/3sKQMO9stUAME462U8SeuBrPCqTPrlevr0qUFBiPYozdVsfIShwe0ekHSn4DF5mzdlX8sURzW7Hp2KO24ae8x3SvJ3G0BiQGqNfvlNraz3Vp7JTSBo1dRk/bkEiwcg5UcQQDN90Y8Xj8gPROFxqXTrE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="6ccc90960ecd6b14d6762282134dd3a51f26c1ec0db30539fb71ebd2d37d0f8b" Description="" Url=""><as:assemblyIdentity name="Robo_V.exe" version="1.0.0.0" publicKeyToken="2f8bc51061705c87" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=ADMINRG-1DN5UFO\DheerPinky</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>N4jN4Y+tq3nPECuyIIjFEICqKu7/vnf9We/M9rEr4qI=</DigestValue></Reference></SignedInfo><SignatureValue>nezM8gNPCnhkbKmG6UObLEIngVcv+jGGqOjTnFFDC00YYb3kAqLP3C7ZFNS6LpG8jTYJqIgw4c7LGDF+oSh+hgWTXLfFTrtqG0FrxyVtMX1ok8gPPg0MPdzfLRl0kR8CfRfkvyEAHdsx9q8vWDn04fXuce8ztWfovBRHYToduUc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>tw1DPgrjGwiLJ6V4yEF/3sKQMO9stUAME462U8SeuBrPCqTPrlevr0qUFBiPYozdVsfIShwe0ekHSn4DF5mzdlX8sURzW7Hp2KO24ae8x3SvJ3G0BiQGqNfvlNraz3Vp7JTSBo1dRk/bkEiwcg5UcQQDN90Y8Xj8gPROFxqXTrE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICATCCAWqgAwIBAgIQewIwyWoT355M8oIZeO0EAzANBgkqhkiG9w0BAQsFADA/MT0wOwYDVQQDHjQAQQBEAE0ASQBOAFIARwAtADEARABOADUAVQBGAE8AXABEAGgAZQBlAHIAUABpAG4AawB5MB4XDTIzMDYxNjIwMjYzMloXDTI0MDYxNjAyMjYzMlowPzE9MDsGA1UEAx40AEEARABNAEkATgBSAEcALQAxAEQATgA1AFUARgBPAFwARABoAGUAZQByAFAAaQBuAGsAeTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAtw1DPgrjGwiLJ6V4yEF/3sKQMO9stUAME462U8SeuBrPCqTPrlevr0qUFBiPYozdVsfIShwe0ekHSn4DF5mzdlX8sURzW7Hp2KO24ae8x3SvJ3G0BiQGqNfvlNraz3Vp7JTSBo1dRk/bkEiwcg5UcQQDN90Y8Xj8gPROFxqXTrECAwEAATANBgkqhkiG9w0BAQsFAAOBgQBF6DypXLuI8siBaDlpImg8rtE6GyZj63wDUBnLb+TsY5oD9mgLk4a5MVG2I5uXZqKZ12aUjZ4rW+/ZHUTPlibKjvG5SKMw8b4RpOjsyZChC2qiIhz5zqsYxmVLecH3r/ZDY+AqVA2hpiAWY3DUrVyDnnn8ydF5xh7rxSfkeTRpDg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

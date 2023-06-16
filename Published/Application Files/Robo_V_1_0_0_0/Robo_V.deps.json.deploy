@@ -6,13 +6,13 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "WinFormsApp1/1.0.0": {
+      "Robo_V/1.0.0": {
         "dependencies": {
           "FontAwesome.Sharp": "6.3.0",
           "MySql.Data": "8.0.33"
         },
         "runtime": {
-          "WinFormsApp1.dll": {}
+          "Robo_V.dll": {}
         }
       },
       "FontAwesome.Sharp/6.3.0": {
@@ -255,7 +255,7 @@
     }
   },
   "libraries": {
-    "WinFormsApp1/1.0.0": {
+    "Robo_V/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
